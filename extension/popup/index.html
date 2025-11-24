@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flappy Logic Arcade</title>
+    <link rel="stylesheet" href="../styles/popup.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="canvas-card">
+        <header>
+          <div>
+            <h1>Flappy Logic</h1>
+            <p>Logic-based scoring • Manifest V3</p>
+          </div>
+          <select id="difficulty-select">
+            <option value="relaxed">Relaxed</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="hardcore">Hardcore</option>
+          </select>
+        </header>
+        <canvas id="game-canvas" width="360" height="560" aria-label="Flappy Logic gameplay area"></canvas>
+        <footer>
+          <button id="play-btn" class="primary">Play</button>
+          <button id="pause-btn">Pause</button>
+          <button id="reset-btn" class="ghost">Reset</button>
+        </footer>
+      </section>
+
+      <aside class="insights-panel">
+        <section>
+          <h2>Live Metrics</h2>
+          <dl>
+            <div>
+              <dt>Total Score</dt>
+              <dd id="metric-score">0</dd>
+            </div>
+            <div>
+              <dt>Streak</dt>
+              <dd id="metric-streak">0</dd>
+            </div>
+            <div>
+              <dt>Precision</dt>
+              <dd id="metric-precision">0%</dd>
+            </div>
+            <div>
+              <dt>Stability</dt>
+              <dd id="metric-stability">0%</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section>
+          <h2>Leaderboard</h2>
+          <ol id="leaderboard-list">
+            <li>No scores yet.</li>
+          </ol>
+          <button id="overlay-toggle" class="ghost">Toggle overlay (Ctrl+Shift+F)</button>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "flappy-logic-extension",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint extension --ext .js",
+    "build": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.57.0",
+    "vitest": "^1.0.0"
+  }
+}

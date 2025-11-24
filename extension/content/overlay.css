@@ -1,0 +1,82 @@
+#flappy-logic-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  background: rgba(8, 10, 25, 0.92);
+  color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  z-index: 2147483647;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+#flappy-logic-overlay header,
+#flappy-logic-overlay footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c9d1ff;
+}
+
+#flappy-logic-overlay footer {
+  justify-content: center;
+  opacity: 0.8;
+}
+
+#flappy-logic-overlay button[data-overlay-close] {
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#flappy-logic-overlay ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 16px 12px 16px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+#flappy-logic-overlay li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#flappy-logic-overlay li:last-child {
+  border-bottom: none;
+}
+
+#flappy-logic-overlay li span:first-child {
+  font-weight: 600;
+  color: #8ad4ff;
+  min-width: 24px;
+}
+
+#flappy-logic-overlay li span:nth-child(2) {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#flappy-logic-overlay li small {
+  color: #8c93ff;
+}
+
+#flappy-logic-overlay li.empty {
+  justify-content: center;
+  font-style: italic;
+}
